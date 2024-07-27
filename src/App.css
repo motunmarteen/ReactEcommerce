@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+#root {
+  width: 100%;
+  /* padding: 2rem; */
+  font-family: 'Italiana', serif;
+  text-align: center;
+}
+
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 60px;
+  color: white;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Playwrite BE WAL", cursive;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.navbar-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.navbar-menu .dropdown-content a {
+  color: white;
+  padding: 12px;
+  display: block;
+}
+
+.navbar-menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-search input {
+  padding: 6px;
+  font-size: 13px;
+}
+
+.navbar-icons a, .navbar-extras a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar-extras a {
+  margin-left: 10px;
+} 
+
+/* Hero Section CSS */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1536840362362-9241939f8874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text .button a {
+  background-color: #61dafb;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-text .button a:hover {
+  background-color: #21a1f1;
+}
