@@ -14,7 +14,7 @@ const ProductCard = (props: ProductCardProps) => {
             <img src={props.productImage} alt={props.productName} />
             <h2>{props.productName}</h2>
             <p>{props.productDescription}</p>
-            <p className="price">${props.productPrice.toFixed(2)}</p>
+            <p className="price">₦{props.productPrice.toFixed(2)}</p>
             {/* <p className={props.productIsLiked ? 'liked' : 'not-liked'}>
                 {props.productIsLiked ? 'Liked' : 'Not Liked'}
             </p> */}
