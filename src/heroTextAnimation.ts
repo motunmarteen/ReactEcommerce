@@ -28,13 +28,13 @@ export function heroTextAnimation() {
 
             if (!isDeleting && currentLength === currentWord.length) {
                 isDeleting = true;
-                setTimeout(type, 1000); // Pause before deleting
+                setTimeout(type, 1000); 
             } else if (isDeleting && currentLength === 0) {
                 isDeleting = false;
                 wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(type, 500); // Pause before typing the next word
+                setTimeout(type, 500); 
             } else {
-                setTimeout(type, isDeleting ? 100 : 200); // Adjust speed for typing and deleting
+                setTimeout(type, isDeleting ? 100 : 200); 
             }
         }
 
